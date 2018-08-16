@@ -30,3 +30,6 @@ var jane = new Person('Jane', 'Doe');
 // calls the greet() function via the prototype for each object
 john.greet();
 jane.greet();
+
+// don't ever do this, but this is how a prototype actually works
+console.log(john.__proto__ === jane.__proto__);
